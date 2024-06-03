@@ -40,7 +40,7 @@ public class UserController {
             // 인증 실패되는 경우
             throw new Exception("인증을 실패하였습니다.");
         }
-        // 인증된 사용자 정볼르 가져옴
+        // 인증된 사용자 정보를 가져옴
         userDetailService.loadUserByUsername(user.getUsername());
         String msg = String.format("%s님 성공적으로 인증되었습니다", user.getUsername());
         return msg;
