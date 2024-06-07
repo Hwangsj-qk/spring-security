@@ -30,7 +30,7 @@ public class AuthController {
     private final UserRepository userRepository;
     private final JwtUtil jwtUtil;
 
-    @PostMapping("/auth")
+    @PostMapping("/auth")       // 로그인
     public Map<String, String> authToken(@RequestBody User user) throws Exception {
         try {
             // 인증 관리자로 인증
